@@ -1,10 +1,12 @@
-# Program to check odd or even number
+# Function to check odd or even
+def check_even_odd(num):
+    if num % 2 == 0:
+        print("The number is Even")
+    else:
+        print("The number is Odd")
 
 # Taking input from user
-num = int(input("Enter a number: "))
+number = int(input("Enter a number: "))
 
-# Checking condition
-if num % 2 == 0:
-    print("The number is Even")
-else:
-    print("The number is Odd")
+# Calling the function
+check_even_odd(number)
