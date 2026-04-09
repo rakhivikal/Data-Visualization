@@ -1,16 +1,15 @@
-def calculate_interest_value(p_amount, r_percent, t_duration):
-    rate_decimal = r_percent / 100
-    yearly_interest = p_amount * rate_decimal
-    total_interest = yearly_interest * t_duration
-    return total_interest
+# Function to calculate Simple Interest
+def simple_interest(p, r, t):
+    si = (p * r * t) / 100
+    return si
 
-# Input
-principal_input = float(input("Enter principal amount: "))
-rate_input = float(input("Enter rate (%): "))
-time_input = float(input("Enter time (years): "))
+# Taking input from user
+p = float(input("Enter Principal amount: "))
+r = float(input("Enter Rate of interest: "))
+t = float(input("Enter Time (in years): "))
 
 # Function call
-interest_result = calculate_interest_value(principal_input, rate_input, time_input)
+result = simple_interest(p, r, t)
 
-# Output
-print("Simple Interest calculated:", interest_result)
+# Display result
+print("Simple Interest is:", result)
