@@ -1,5 +1,4 @@
-# P
-# gitrogram to count number of vowels in a string
+# Program to count number of vowels in a string
 
 # Taking input from user
 text = input("Enter a string: ")
